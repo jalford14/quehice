@@ -1,3 +1,31 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.task_box {
+    
+    height: 90px;
+    background-color: #7FC9A5;
+    border: solid #22324E 1px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#plus_sign {
+    font-size: 65px;
+    margin-left: 10%;
+}
+
+#new_entry {
+    font-size: 45px;
+    margin-right: 10%;
+}
+
+a {
+    display: block;
+    max-width: 55%;
+    margin: auto;
+}
