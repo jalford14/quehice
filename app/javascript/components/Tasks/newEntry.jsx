@@ -5,7 +5,7 @@ import React from 'react';
 class NewEntry extends React.Component {
   render() {
     return(
-      <a href = "#">
+      <a href = "/tasks/new">
 
         <div class = "task_box">
        
