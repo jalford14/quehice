@@ -4,5 +4,7 @@
 
 
 <% @tasks.each do |task| %>
-    <%= react_component 'Tasks/currentTask', task: task.description %>
+    <% currDate = task.date %>
+    <% currDate = currDate.strftime("%a, %b %d %Y") %>
+    <%= react_component 'Tasks/currentTask', date: currDate, task: task.description %>
 <% end %>
