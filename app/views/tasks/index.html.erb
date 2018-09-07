@@ -1,0 +1,8 @@
+<%= react_component 'Tasks' %>
+
+<br/><br/><br/><br/><br/>
+
+
+<% @tasks.each do |task| %>
+    <%= react_component 'Tasks/currentTask', task: task.description %>
+<% end %>
