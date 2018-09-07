@@ -8,8 +8,8 @@ class NewEntry extends React.Component {
 
         <div class = "task_box">
        
-            <div id = "plus_sign">Date</div>
-            <div id = "new_entry">{this.props.task}</div>
+            <div id = "date">{this.props.date}</div>
+            <div id = "taskToDo">{this.props.task}</div>
 
         </div>
         
