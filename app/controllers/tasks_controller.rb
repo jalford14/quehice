@@ -12,6 +12,7 @@ class TasksController < ApplicationController
         @task = Task.new(params.require(:task).permit(:description, :date))
 
         @task.save
+        redirect_to "/tasks"
     end
     
     def show
