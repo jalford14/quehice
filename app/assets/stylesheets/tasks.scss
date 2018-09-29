@@ -3,7 +3,7 @@
 /////////////////////
 
 .task_box {
-    height: 90px;
+    height: 70px;
     background-color: #7FC9A5;
     border: solid #22324E 1px;
     border-radius: 10px;
@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 #plus_sign {
