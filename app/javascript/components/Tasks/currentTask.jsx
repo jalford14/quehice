@@ -12,10 +12,10 @@ class NewEntry extends React.Component {
             <div id = "date">{this.props.date}</div>
             <div id = "taskToDo">{this.props.task}</div>
             <div id = "edit">
-              <img src='./trash_icon.png' />
+              <a href={this.props.editPath}>edit</a>
             </div>
             <div id = "delete">
-              <img src='./trash_icon.png' />
+              <a data-confirm="Are you sure?" href={this.props.deletePath} data-method="delete">delete</a>
             </div>
 
         </div>
