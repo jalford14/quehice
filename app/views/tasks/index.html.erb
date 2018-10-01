@@ -1,0 +1,15 @@
+<%= react_component 'Tasks' %>
+
+<br/><br/><br/><br/><br/>
+
+
+<% @tasks.each do |task| %>
+    <% currDate = task.date %>
+    <% currDate = currDate.strftime("%a, %b %d %Y") %>
+    <%= react_component 'Tasks/currentTask', 
+        date: currDate, 
+        task: task.description,
+        editPath: edit_task_path(task),
+        deletePath: task_path(task)
+     %>
+<% end %>

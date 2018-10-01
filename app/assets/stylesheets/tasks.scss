@@ -1,3 +1,77 @@
-// Place all the styles related to the Tasks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/////////////////////
+////LIST OF TASKS////
+/////////////////////
+
+.task_box {
+    height: 70px;
+    background-color: #7FC9A5;
+    border: solid #22324E 1px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#plus_sign {
+    font-size: 65px;
+    margin-left: 10%;
+}
+
+#new_entry {
+    font-size: 45px;
+    margin-right: 10%;
+}
+
+#taskToDo {
+    font-size: 27px;
+    margin-right: 5%;
+}
+
+#date {
+    margin-left: 5%;
+    font-size: 17px;
+}
+
+a {
+    display: block;
+    max-width: 850px;
+    margin: auto;
+}
+
+///////////////
+///NEW ENTRY///
+///////////////
+
+#question {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 36px;
+}
+
+#description, input {
+    max-width: 850px;
+    height: 90px;
+    text-align: center;
+    background-color: #7FC9A5;
+    border: none;
+    border-radius: 10px;
+}
+
+#description {
+    margin: 75px auto auto auto;
+}
+
+input {
+    display: flex;
+    align-self: flex-start;
+    font-size: 32px;
+    color: #22324E;
+    box-sizing: border-box;
+    overflow: visible;
+    outline: none;
+    width: 850px;
+    text-align: left;
+    padding-left: 20px;
+}

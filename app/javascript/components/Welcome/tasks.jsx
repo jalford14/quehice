@@ -2,7 +2,7 @@ import React from 'react';
 class Tasks extends React.Component {
   render() {
     return(
-        <a href = "#">
+        <a href = "/tasks">
             <div class = "boxes">
                 Tasks
             </div>
