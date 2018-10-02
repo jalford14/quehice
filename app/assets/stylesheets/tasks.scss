@@ -81,6 +81,45 @@ input {
     padding-left: 20px;
 }
 
+//////////////
+//EDIT ENTRY//
+//////////////
+
+#editWrapper {
+    max-width: 850px;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 55px auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form, #save, #delete {
+    background-color: #7FC9A5;
+    flex-grow: 1;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+    align-items: center;
+    border-bottom: 3px solid darken(#7FC9A5, 30%);
+}
+
+#delete {
+    background-color: #B22812;
+    border-bottom: 3px solid darken(#B22812, 20%);
+}
+
+#save:active, #delete:focus {
+    background-color: darken(#7FC9A5, 30%);
+}
+
+#delete:focus {
+    background-color: darken(#B22812, 20%);
+}
+
 @keyframes slidein {
     from {
         transform: translateY(-400px);
