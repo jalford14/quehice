@@ -4,3 +4,15 @@
 	method: "put",
 	value: @task.description
 %>
+
+<div id="editWrapper">
+	<form id="save" action="<%= task_path(@task) %>" method="post">
+		<input type="hidden" name="_method" value="put" />
+		<a href="#" onclick="document.getElementById('form').submit();">
+				Save
+		</a>
+	</form>
+	<a id="delete" data-confirm="Are you sure?" href="<%= task_path(@task) %>" data-method="delete">
+			Delete
+	</a>
+</div>

@@ -35,14 +35,14 @@ class NewEntry extends React.Component {
   render() {
       console.log(this.props)
     return(
-            <div id="description">
-                <form action={this.state.action} method="post">
-                    <input type="hidden" name='authenticity_token' value={this.props.authenticity_token} />
-                    <input type="hidden" name="_method" value={this.state.method} />
-                    <input type="hidden" name="task[date]" value={this.getDate()} />
-                    <input type="text" value={this.state.value} name="task[description]" autocomplete="off" autofocus="true" onChange={this.handleChange}/>
-                </form>
-            </div>
+        <div id="description">
+            <form action={this.state.action} method="post" id="form">
+                <input type="hidden" name='authenticity_token' value={this.props.authenticity_token} />
+                <input type="hidden" name="_method" value={this.state.method} />
+                <input type="hidden" name="task[date]" value={this.getDate()} />
+                <input type="text" value={this.state.value} name="task[description]" autocomplete="off" autofocus="true" onChange={this.handleChange}/>
+            </form>
+        </div>
     );
   }
 }
